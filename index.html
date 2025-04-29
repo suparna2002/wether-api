@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="bg-color">
+        <div class="heading1">
+            Weather API
+        </div>
+    </div>
+
+    <!-- Location Input -->
+    <div class="loaction-bg"></div>
+    <div class="loaction-heading">
+        <input type="text" id="location-input" placeholder="Enter location" autofocus>
+    </div>
+
+    <!-- Access Token Input -->
+    <div class="access-token-bg"></div>
+    <div class="access-token-heading">
+        <input type="text" id="token-input" placeholder="Enter Access Token">
+    </div>
+
+    <!-- Submit Button -->
+    <div class="btn-bg">
+        <button class="btn-text" onclick="getRequestApi()">Submit</button>
+    </div>
+
+    <!-- Weather Data -->
+    <div class="heading2">Weather Data</div>
+    <div class="location-heading" id="location">Location:</div>
+    <div class="lat-heading" id="lat">Lat:</div>
+    <div class="long-heading" id="long">Long:</div>
+    <div class="time-heading" id="time-zone">Time Zone:</div>
+    <div class="Wind-heading" id="wind-speed">Wind Speed:</div>
+    <div class="Pressure-heading" id="pressure">Pressure:</div>
+    <div class="Humidity-heading" id="humidity">Humidity:</div>
+    <div class="Wind-direction-heading" id="wind-direction">Wind Direction:</div>
+    <div class="uv-heading" id="uv-index">UV Index:</div>
+    <div class="feels-heading" id="feels-like">Feels Like:</div>
+    
+    <div class="rectangle-box"></div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
